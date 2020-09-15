@@ -1,0 +1,3 @@
+[submodule "src/shared"]
+	path = src/shared
+	url = git@git.pragma.com.co:Familia_Core/intranet-shared-components.git

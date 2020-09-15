@@ -1,0 +1,123 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.f-header {
+    position: fixed;
+    height: 64px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $blue;
+    display: flex;
+    z-index: 5;
+
+    @include from($x-large) {
+        justify-content: center;
+        height: 50px;
+    }
+
+    .f-logo-container {
+        height: 100%;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        width: 130px;
+        min-width: 130px;
+
+        @include from($x-large) {
+            margin: 0;
+            width: 100px;
+            min-width: 100px;
+        }
+
+        .f-logo {
+            width: 100%;
+        }
+    }
+
+    .f-right-header-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @include from($x-large) {
+            display: none;
+        }
+
+        .f-searcher-container {
+            background: $sky-blue;
+            height: 100%;
+            width: 64px;
+            transition: all ease-in 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 17px;
+            box-sizing: border-box;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+
+            &.active {
+                width: 100%;
+            }
+        }
+
+        .f-notification-container {
+            // background: mediumseagreen;
+            height: 100%;
+            min-width: 64px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 23px;
+
+            .f-icon-notification-container {
+                cursor: pointer;
+                width: fit-content;
+            }
+        }
+
+        .f-profile-container {
+            min-width: 200px;
+            height: 100%;
+            // background: midnightblue;
+            margin-left: 20px;
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+            user-select: none;
+
+            .f-name-rol-container {
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                font-family: $gibson-regular;
+                font-size: 14px;
+                margin-right: 10px;
+
+                .f-rol-container {
+                    font-size: 11px;
+                    margin-top: 6px;
+                }
+            }
+
+            .f-profile-picture-container {
+                width: 64px;
+                min-width: 64px;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                background: #aff018;
+
+                .f-profile-picture {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

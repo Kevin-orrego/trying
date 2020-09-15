@@ -1,0 +1,166 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.f-menu-container {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: $blue;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #fff;
+    user-select: none;
+    font-family: $gibson-regular;
+    z-index: 4;
+
+    @include from($x-large) {
+        top: inherit;
+        bottom: 70px;
+        height: 356px;
+    }
+
+    &.inactive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include from($x-large) {
+            width: 0;
+            overflow: hidden;
+        }
+    }
+
+    &.active {
+        width: 235px;
+        height: fit-content;
+        cursor: default;
+    }
+
+    .f-icon-menu-container {
+        font-size: 25px;
+
+        @include from($x-large) {
+            display: none;
+        }
+    }
+
+    .f-list-menu-container {
+        width: 100%;
+        padding: 20px;
+        padding-top: 56px;
+        padding-left: 0;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+
+        .f-close-icon-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .f-item-menu {
+            padding-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            transition: all 0.2s;
+            height: 30px;
+
+            &:hover {
+                border: solid;
+                border-width: 0px;
+                border-left-width: 2px;
+                border-color: $yellow;
+                padding-left: 45px;
+            }
+
+            &.active {
+                margin-left: 35px;
+                padding-left: 10px;
+                border: solid;
+                border-width: 0px;
+                border-left-width: 2px;
+                border-color: $yellow;
+            }
+
+            .f-icon-menu-container {
+                width: 30px;
+                font-size: 23px;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+
+                &.active {
+                    color: $yellow;
+                }
+            }
+
+            .f-title-menu-container {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.f-menu-mobile-container {
+    display: none;
+
+    @include from($x-large) {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 72px;
+        background: $blue;
+        z-index: 4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .f-item-mobile-menu {
+            font-family: $gibson-light;
+            height: 64px;
+            width: 50px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: flex-end;
+            font-size: 13px;
+
+            .f-item-top-container{
+                font-size: 30px;
+                margin-bottom: 5px;
+            }
+
+            .f-item-top-img-container{
+                height: 45px;
+                min-height: 45px;
+                width: 45px;
+                border-radius: 50px;
+                background-color: chartreuse;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                .f-profile-img-mobile{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

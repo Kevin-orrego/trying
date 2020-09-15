@@ -1,0 +1,390 @@
+@include fontface("Gibson-Bold", "Gibson-Bold");
+@include fontface("Gibson-Light", "Gibson-Light");
+@include fontface("Gibson-Regular", "Gibson-Regular");
+@include fontface("Gibson-SemiBold", "Gibson-SemiBold");
+
+// @font-face {
+//   font-family: "icon-family";
+//   src: url("../assets/fonts/iconografia/Nosotrasfont.eot");
+//   src: url("../assets/fonts/iconografia/Nosotrasfont.eot")
+//       format("embedded-opentype"),
+//     url("../assets/fonts/iconografia/Nosotrasfont.ttf") format("truetype"),
+//     url("../assets/fonts/iconografia/Nosotrasfont.woff") format("woff"),
+//     url("../assets/fonts/iconografia/Nosotrasfont.svg") format("svg");
+
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// [class^="icon-"],
+// [class*=" icon-"] {
+//   /* use !important to prevent issues with browser extensions that change fonts */
+//   font-family: "icon-family";
+//   speak: none;
+//   font-style: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// @font-face {
+//   font-family: "icon2-family";
+//   src: url("../assets/fonts/iconografia/Nosotrasfont2.eot");
+//   src: url("../assets/fonts/iconografia/Nosotrasfont2.eot")
+//       format("embedded-opentype"),
+//     url("../assets/fonts/iconografia/Nosotrasfont2.ttf") format("truetype"),
+//     url("../assets/fonts/iconografia/Nosotrasfont2.woff") format("woff"),
+//     url("../assets/fonts/iconografia/Nosotrasfont2.svg") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// [class^="icon2-"],
+// [class*=" icon2-"] {
+//   /* use !important to prevent issues with browser extensions that change fonts */
+//   font-family: "icon2-family" !important;
+//   speak: none;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// .icon2-notification-active:before {
+//   content: "\e942";
+// }
+// .icon2-close:before {
+//   content: "\e943";
+// }
+// .icon2-instagram1:before {
+//   content: "\e944";
+// }
+// .icon2-consulta:before {
+//   content: "\e945";
+// }
+// .icon2-free:before {
+//   content: "\e946";
+// }
+// .icon2-sin-alas:before {
+//   content: "\e947";
+// }
+// .icon2-test:before {
+//   content: "\e948";
+// }
+// .icon2-articulo:before {
+//   content: "\e949";
+// }
+// .icon2-paso-paso:before {
+//   content: "\e94a";
+// }
+// .icon2-like_hover:before {
+//   content: "\e94b";
+// }
+// .icon2-camara:before {
+//   content: "\e94c";
+// }
+// .icon2-pencil:before {
+//   content: "\e94d";
+// }
+// .icon2-bag:before {
+//   content: "\e94e";
+// }
+// .icon2-jabon:before {
+//   content: "\e94f";
+// }
+// .icon2-lacti:before {
+//   content: "\e950";
+// }
+// .icon2-protector:before {
+//   content: "\e951";
+// }
+// .icon2-regalo:before {
+//   content: "\e952";
+// }
+// .icon2-tampones:before {
+//   content: "\e953";
+// }
+// .icon2-toalla:before {
+//   content: "\e954";
+// }
+// .icon2-toallitas:before {
+//   content: "\e955";
+// }
+// .icon2-guardado-active:before {
+//   content: "\e956";
+// }
+// .icon2-youtube:before {
+//   content: "\e957";
+// }
+// .icon2-corazon-relleno1:before {
+//   content: "\e958";
+// }
+
+// .icon-corazon-relleno {
+//   content: "\e940";
+// }
+
+// .icon-izquierda:before {
+//   content: "\e941";
+// }
+
+// .icon-acuario:before {
+//   content: "\e900";
+// }
+
+// .icon-alert:before {
+//   content: "\e901";
+// }
+
+// .icon-anonymous:before {
+//   content: "\e902";
+// }
+
+// .icon-aries:before {
+//   content: "\e903";
+// }
+
+// .icon-beauty:before {
+//   content: "\e904";
+// }
+
+// .icon-block:before {
+//   content: "\e905";
+// }
+
+// .icon-bullet:before {
+//   content: "\e906";
+// }
+
+// .icon-call:before {
+//   content: "\e907";
+// }
+
+// .icon-cancer:before {
+//   content: "\e908";
+// }
+
+// .icon-capricornio:before {
+//   content: "\e909";
+// }
+
+// .icon-cart:before {
+//   content: "\e90a";
+// }
+
+// .icon-chat:before {
+//   content: "\e90b";
+// }
+
+// .icon-check-2:before {
+//   content: "\e90c";
+// }
+
+// .icon-check:before {
+//   content: "\e90d";
+// }
+
+// .icon-consultorio:before {
+//   content: "\e90e";
+// }
+
+// .icon-cotton:before {
+//   content: "\e90f";
+// }
+
+// .icon-cuidado:before {
+//   content: "\e910";
+// }
+
+// .icon-delete:before {
+//   content: "\e911";
+// }
+
+// .icon-dislike:before {
+//   content: "\e912";
+// }
+
+// .icon-down:before {
+//   content: "\e913";
+// }
+
+// .icon-download:before {
+//   content: "\e914";
+// }
+
+// .icon-drop:before {
+//   content: "\e915";
+// }
+
+// .icon-email:before {
+//   content: "\e916";
+// }
+
+// .icon-entertaiment:before {
+//   content: "\e917";
+// }
+
+// .icon-escorpio:before {
+//   content: "\e918";
+// }
+
+// .icon-exit:before {
+//   content: "\e919";
+// }
+
+// .icon-facebook:before {
+//   content: "\e91a";
+// }
+
+// .icon-flower:before {
+//   content: "\e91b";
+// }
+
+// .icon-full-drop:before {
+//   content: "\e91c";
+// }
+
+// .icon-geminis:before {
+//   content: "\e91d";
+// }
+
+// .icon-heart-1:before {
+//   content: "\e91e";
+// }
+
+// .icon-heart:before {
+//   content: "\e91f";
+// }
+
+// .icon-home:before {
+//   content: "\e920";
+// }
+
+// .icon-icon-sex:before {
+//   content: "\e921";
+// }
+
+// .icon-idea:before {
+//   content: "\e922";
+// }
+
+// .icon-left:before {
+//   content: "\e924";
+// }
+
+// .icon-leo:before {
+//   content: "\e925";
+// }
+
+// .icon-libra:before {
+//   content: "\e926";
+// }
+
+// .icon-like:before {
+//   content: "\e927";
+// }
+
+// .icon-lock:before {
+//   content: "\e928";
+// }
+
+// .icon-menu:before {
+//   content: "\e929";
+// }
+
+// .icon-moda:before {
+//   content: "\e92a";
+// }
+
+// .icon-notification:before {
+//   content: "\e92b";
+// }
+
+// .icon-pause:before {
+//   content: "\e92c";
+// }
+
+// .icon-phone:before {
+//   content: "\e92d";
+// }
+
+// .icon-piscis:before {
+//   content: "\e92e";
+// }
+
+// .icon-play:before {
+//   content: "\e92f";
+// }
+
+// .icon-pluma:before {
+//   content: "\e930";
+// }
+
+// .icon-product:before {
+//   content: "\e931";
+// }
+
+// .icon-profile:before {
+//   content: "\e932";
+// }
+
+// .icon-right-arrow:before {
+//   content: "\e933";
+// }
+
+// .icon-right:before {
+//   content: "\e934";
+// }
+
+// .icon-sagitario:before {
+//   content: "\e935";
+// }
+
+// .icon-save:before {
+//   content: "\e936";
+// }
+
+// .icon-search:before {
+//   content: "\e937";
+// }
+
+// .icon-see-password:before {
+//   content: "\e938";
+// }
+
+// .icon-settings:before {
+//   content: "\e939";
+// }
+
+// .icon-share:before {
+//   content: "\e93a";
+// }
+
+// .icon-shop:before {
+//   content: "\e93b";
+// }
+
+// .icon-tauro:before {
+//   content: "\e93c";
+// }
+
+// .icon-twitter:before {
+//   content: "\e93d";
+// }
+
+// .icon-up:before {
+//   content: "\e93e";
+// }
+
+// .icon-virgo:before {
+//   content: "\e93f";
+// }

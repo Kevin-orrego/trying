@@ -1,0 +1,46 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.f-separator {
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    background: $light-neutral;
+}
+
+.f-card,
+.f-card-container {
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    // overflow: hidden;
+    position: relative;
+    background-color: #fff;
+
+    &-title {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+
+        /*Default properties*/
+        color: $blue-primary;
+        font-size: 22px;
+        font-family: $gibson-semibold;
+
+        &.pink {
+            background-color: $pink-primary;
+            color: white;
+        }
+
+        &.blue {
+            background-color: $blue-primary;
+            color: white;
+        }
+    }
+}
